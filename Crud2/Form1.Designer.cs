@@ -173,6 +173,7 @@
             // 
             // dataGridView1
             // 
+<<<<<<< HEAD
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Highlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(536, 137);
@@ -223,6 +224,16 @@
             this.textBox7.Size = new System.Drawing.Size(180, 31);
             this.textBox7.TabIndex = 19;
             this.textBox7.Text = "Buscar Nombre";
+=======
+            this.dgvDatos.BackgroundColor = System.Drawing.SystemColors.Highlight;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(519, 70);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.RowHeadersWidth = 62;
+            this.dgvDatos.RowTemplate.Height = 28;
+            this.dgvDatos.Size = new System.Drawing.Size(568, 322);
+            this.dgvDatos.TabIndex = 14;
+>>>>>>> parent of 0e04101 (Cambiame eta mmg)
             // 
             // Form1
             // 
