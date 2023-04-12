@@ -178,6 +178,7 @@
             this.dgvDatos.RowTemplate.Height = 28;
             this.dgvDatos.Size = new System.Drawing.Size(568, 322);
             this.dgvDatos.TabIndex = 14;
+            this.dgvDatos.DoubleClick += new System.EventHandler(this.dgvDatos_DoubleClick);
             // 
             // Form1
             // 

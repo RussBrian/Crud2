@@ -56,6 +56,7 @@ namespace Crud2
 
         private void limpiar()
         {
+            
             txtNombre.Focus();
             txtModelo.Text= string.Empty;
             txtDetalles.Text= string.Empty;
@@ -75,8 +76,6 @@ namespace Crud2
         {
 
             cargarDatos();
-            subirDatos();
-            MessageBox.Show("sa");
             datos.Crear(producto);
             limpiar();
            
@@ -84,10 +83,30 @@ namespace Crud2
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (id!=0)
+            if (id > 0)
             {
-               cargarDatos
+                cargarDatos();
+                datos.update(producto);
+                limpiar();
+
             }
+            else 
+            {
+                MessageBox.Show("s");
+            }
+        }
+
+        private void dgvDatos_DoubleClick(object sender, EventArgs e)
+        {
+            id = Convert.ToInt32(dgvDatos.CurrentRow.Cells["id"].Value.ToString());
+
+            txtNombre.Text = dgvDatos.CurrentRow.Cells["Nombre"].Value.ToString();
+            txtFabricante.Text = dgvDatos.CurrentRow.Cells["Fabricante"].Value.ToString();
+            txtModelo.Text = dgvDatos.CurrentRow.Cells["Modelo"].Value.ToString();
+            txtSerial.Text = dgvDatos.CurrentRow.Cells["Serial"].Value.ToString();
+            txtDetalles.Text = dgvDatos.CurrentRow.Cells["Detalles"].Value.ToString();
+
+
         }
     }
 }

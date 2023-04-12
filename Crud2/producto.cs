@@ -20,5 +20,6 @@ namespace Crud2
         public string modelo { get; set; }
         public string serial { get; set; }
         public string detalles { get; set; }
+        
     }
 }
